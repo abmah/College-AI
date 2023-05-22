@@ -394,11 +394,104 @@ manager.addDocument('en', 'I need to find a novel from the library', 'help.colle
 manager.addDocument('en', 'I need to find a literature book from the library', 'help.college');
 manager.addDocument('en', 'I need to find a book from the library', 'help.college');
 
-manager.addAnswer('en', 'help.college', 'The library is on the second floor of the main building');
-manager.addAnswer('en', 'help.college', 'You can find the library on the second floor of the main building');
-manager.addAnswer('en', 'help.college', 'Go to the second floor of the main building and you will find the library');
-manager.addAnswer('en', 'help.college', 'If you go to the second floor of the main building you will find the library');
-manager.addAnswer('en', 'help.college', 'The library is on the second floor of the main building');
+manager.addAnswer('en', 'help.college', 'The library is on the second floor of the main building {-18.61092832326364, 4.243537490073049, 6.1420792672884055}');
+manager.addAnswer('en', 'help.college', 'You can find the library on the second floor of the main building {-18.61092832326364, 4.243537490073049, 6.1420792672884055}');
+manager.addAnswer('en', 'help.college', 'Go to the second floor of the main building and you will find the library {-18.61092832326364, 4.243537490073049, 6.1420792672884055}');
+manager.addAnswer('en', 'help.college', 'If you go to the second floor of the main building you will find the library {-18.61092832326364, 4.243537490073049, 6.1420792672884055}');
+manager.addAnswer('en', 'help.college', 'The library is on the second floor of the main building {-18.61092832326364, 4.243537490073049, 6.1420792672884055}');
+
+manager.addDocument('en', 'Where is the cafeteria located?', 'help.cafeteria')
+manager.addDocument('en', 'I want to find the cafeteria.', 'help.cafeteria')
+manager.addDocument('en', 'Can you tell me where the cafeteria is?', 'help.cafeteria')
+manager.addDocument('en', 'What is the address of the cafeteria?', 'help.cafeteria')
+manager.addDocument('en', 'I need to go to the cafeteria.', 'help.cafeteria')
+manager.addDocument('en', "I'm hungry. Where can I find the cafeteria?", 'help.cafeteria')
+manager.addDocument('en', 'Where can I grab some food?', 'help.cafeteria')
+manager.addDocument('en', 'Do you know where the dining hall is?', 'help.cafeteria')
+manager.addDocument('en', "I'm looking for a place to eat. Can you help me?", 'help.cafeteria')
+
+manager.addAnswer('en', 'help.cafeteria', 'The cafeteria is located on the ground floor of the main building, to the left {19.583985610418956, 3.514349917370587, 5.57151503401632}.')
+manager.addAnswer('en', 'help.cafeteria', 'You can find the cafeteria on the ground floor of the main building, to the left {19.583985610418956, 3.514349917370587, 5.57151503401632}.')
+manager.addAnswer('en', 'help.cafeteria', 'Go to the ground floor of the main building, and you will find the cafeteria to the left {19.583985610418956, 3.514349917370587, 5.57151503401632}.')
+manager.addAnswer('en', 'help.cafeteria', 'If you go to the ground floor of the main building, you will find the cafeteria to the left {19.583985610418956, 3.514349917370587, 5.57151503401632}.')
+manager.addAnswer('en', 'help.cafeteria', 'The cafeteria is on the ground floor of the main building, to the left {19.583985610418956, 3.514349917370587, 5.57151503401632}.')
+
+manager.addDocument('en', 'Where is the algorithm building located?', 'help.algorithm')
+manager.addDocument('en', 'Can you tell me where the algorithm building is?', 'help.algorithm')
+manager.addDocument('en', 'What is the address of the algorithm building?', 'help.algorithm')
+manager.addDocument('en', 'I need to go to the algorithm building.', 'help.algorithm')
+manager.addDocument('en', 'Where can I find the algorithm building?', 'help.algorithm')
+manager.addDocument('en', "I'm looking for the algorithm building. Can you help me?", 'help.algorithm')
+
+manager.addDocument('en', "where can i find dr hasan between 10-30 and 11-30", 'hasan.schedule')
+manager.addAnswer('en', 'hasan.schedule', "on sunday and tuesday and thursday between 10-30 and 11-30 dr hasan is in class A102 teaching the course discrete maths")
+
+manager.addDocument('en', "where can i find dr hasan between 11-30 and 12-30", 'hasan.schedule')
+manager.addAnswer('en', 'hasan.schedule', "on sunday and tuesday and thursday between 11-30 and 12-30 dr hasan is in class A102 teaching the course numerical analysis")
+
+manager.addDocument('en', "where can i find dr hasan between 12-30 and 13-30", 'hasan.schedule')
+manager.addAnswer('en', 'hasan.schedule', "on sunday and tuesday and thursday between 12-30 and 13-30 dr hasan is in class A105 teaching the course algorithms analysis and design")
+
+manager.addDocument('en', "draw me the area where dr hasan is most likely to be in today", 'hasan.area')
+manager.addDocument('en', "mark the area which dr hasan will be today", 'hasan.area')
+manager.addAnswer('en', 'hasan.area', "dr hasan is most likely is class A102 or A105 or A104 {-8.5, 2.4, 2.5}")
+
+
+
+manager.addDocument('en', "can you return to origin", 'help.origin')
+manager.addDocument('en', "clear", 'help.origin')
+manager.addAnswer('en', 'help.origin', "Absolutely! Going back to origin. {-2.920713607148164, 14.974386624171137, -65.87451264613044}")
+
+manager.addDocument('en', `Class: البرمجة بلغة جافا
+Time: 9:30-10:30
+Location: B203
+Instructor: Dr Muhammad Jazi Bawaana
+
+Class: تصميم وادارة قواعد البيانات
+Time: 8:30-9:30
+Location: A129
+Instructor: Hamdi Ahmed Mohamed Al-Omari
+
+Class: تحليل وتصميم الخوارزميات
+Time: 12:30-1:30
+Location: A105
+Instructor: Dr.. Hassan Mouidi Al-Sarhan`, 'help.schedule')
+
+manager.addAnswer('en', 'help.schedule', "Absolutely! Here's your schedule. Feel free to click on each subject cell to access additional details. {-2.920713607148164, 14.974386624171137, -65.87451264613044}")
+manager.addAnswer('en', 'help.schedule', "Of course! Your schedule is ready for you. Simply click on any subject cell to view more information. {-2.920713607148164, 14.974386624171137, -65.87451264613044}")
+manager.addAnswer('en', 'help.schedule', "Certainly! I've prepared your schedule. You can get more details about each subject by interacting with the respective cell. {-2.920713607148164, 14.974386624171137, -65.87451264613044}")
+manager.addAnswer('en', 'help.schedule', "No problem! Here's the schedule you requested. For further information about each subject, just click on the corresponding cell. {-2.920713607148164, 14.974386624171137, -65.87451264613044}")
+manager.addAnswer('en', 'help.schedule', "Sure thing! Your schedule is all set. If you want to see more details about a particular subject, just interact with its cell. {-2.920713607148164, 14.974386624171137, -65.87451264613044}")
+manager.addAnswer('en', 'help.schedule', "Absolutely! I've organized your schedule. If you need more information about any subject, you can easily access it by interacting with the relevant cell. {-2.920713607148164, 14.974386624171137, -65.87451264613044}")
+manager.addAnswer('en', 'help.schedule', "Certainly! Here's the schedule you were looking for. To find additional details about each subject, simply click on the respective cell. {-2.920713607148164, 14.974386624171137, -65.87451264613044}")
+manager.addAnswer('en', 'help.schedule', "Of course! I've got your schedule ready. If you'd like to see more information about a specific subject, just click on its cell. {-2.920713607148164, 14.974386624171137, -65.87451264613044}")
+manager.addAnswer('en', 'help.schedule', "No worries! Here's the schedule as requested. You can explore more details about each subject by interacting with the corresponding cell. {-2.920713607148164, 14.974386624171137, -65.87451264613044}")
+manager.addAnswer('en', 'help.schedule', "Certainly! Your schedule is at your fingertips. If you want more information about any subject, just click on the cell related to it. {-2.920713607148164, 14.974386624171137, -65.87451264613044}")
+
+
+manager.addAnswer('en', 'help.algorithm', 'The algorithm building is located in the big main building, to the left of the main building. {59.97462923030914, 7.9301704228760785, 12.65022837169855}.')
+manager.addAnswer('en', 'help.algorithm', 'You can find the algorithm building in the big main building, to the left of the main building. {59.97462923030914, 7.9301704228760785, 12.65022837169855}.')
+manager.addAnswer('en', 'help.algorithm', 'Go to the big main building, and you will find the algorithm building to the left of the main building. {59.97462923030914, 7.9301704228760785, 12.65022837169855}.')
+manager.addAnswer('en', 'help.algorithm', 'If you go to the big main building, you will find the algorithm building to the left of the main building. {59.97462923030914, 7.9301704228760785, 12.65022837169855}.')
+manager.addAnswer('en', 'help.algorithm', 'The algorithm building is in the big main building, to the left of the main building. {59.97462923030914, 7.9301704228760785, 12.65022837169855}.')
+
+
+manager.addDocument('en', "make a chart on top of the main building showing the male female distrubution", 'chart.FMR')
+manager.addAnswer('en', 'chart.FMR', "Here's the chart you requested. Feel free to interact with it to get more information. {-2.774677926790755, 14.225667292962575, -62.58078701382391}")
+
+manager.addDocument('en', "make a chart on top of the main building showing the student year distrubution", 'chart.SY')
+manager.addAnswer('en', 'chart.SY', "Here's the chart you requested. Feel free to interact with it to get more information. {-2.774677926790755, 12.225667292962575, -50.58078701382391}")
+
+
+manager.addDocument('en', "make a chart on top of the main building showing the day student density", 'chart.SD')
+manager.addAnswer('en', 'chart.SD', "Here's the chart you requested. Feel free to interact with it to get more information. {-2.774677926790755, 11.225667292962575, -50.58078701382391}")
+
+manager.addDocument('en', "what classes should i have for my first semester as a computer science student", 'student.help')
+manager.addAnswer('en', 'student.help', "for a computer science student having calculas 1 and intro to programming is a must because these two subjects open many other subjects")
+
+manager.addDocument('en', "what programming language is taught in the class intro to programming", 'class.programming')
+manager.addAnswer('en', 'class.programming', "C++ is used")
+
 
 
 
