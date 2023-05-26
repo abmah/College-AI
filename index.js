@@ -9,15 +9,15 @@ const manager = new NlpManager({ languages: ['en'], forceNER: true });
 const positionArray = [
   {
     location: 'A105',
-    position: [3.04, 1.32, 3.36]
+    position: [-7.78, 3.29, 5.75]
   },
   {
     location: 'A129',
-    position: [20.25, 4.2, 8.08]
+    position: [3.04, 1.32, 3.36]
   },
   {
     location: 'B203',
-    position: [-7.78, 3.29, 5.75]
+    position: [20.25, 4.2, 8.08]
   },
 ];
 function convertTextToObject(input) {
